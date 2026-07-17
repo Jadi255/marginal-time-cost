@@ -59,9 +59,8 @@ or paste two columns straight from a spreadsheet. In cost coordinates the crosse
 applied to your data directly — `c ≈ ΔT/ΔQ` between consecutive samples, plotted at interval midpoints.
 Those are measured, not fitted.
 
-Note that Q∞ must be supplied for your own data. First-order, Hixson–Crowell and Weibull all require
-it, and a real experiment does not hand it to you. The choice affects the result; the field's treatment
-of this is an open problem the paper discusses rather than solves.
+Note that Q∞ must be supplied for your own data — first-order, Hixson–Crowell and Weibull all require it. Where release runs to plateau, which is the ordinary case, Q∞ is read from the data rather than fitted. Where release is genuinely incomplete, the value is ambiguous between the releasable and the loaded amount, and that ambiguity propagates into the Type III exponent — an open problem the paper discusses rather than solves. The cost curve itself, c(Q) = dt/dQ, needs no Q∞ at any point.
+
 
 ### The verification notebook
 
